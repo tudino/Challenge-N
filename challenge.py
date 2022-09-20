@@ -77,7 +77,7 @@ if __name__ == '__main__':
 		if bid == None:
 			send_order(189)
 		else:
-			send_order(bid - 0.5)
+			send_order(bid - 0.05)
 		disconnect()
 	except Exception as e:
 		print(e)
