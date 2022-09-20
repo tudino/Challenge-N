@@ -24,7 +24,7 @@ def read_arguments():
 			account = sys.argv[i+1]
 
 def connect():
-	print("Iniciando sesion en Remarkets")
+	print("Iniciando sesion en Remarkets ...")
 	initialize = pyRofex.initialize(user=user, password=password, account=account, environment=pyRofex.Environment.REMARKET)
 
 def disconnect():
