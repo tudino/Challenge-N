@@ -1,6 +1,6 @@
 # Challenge-N
 
-### 
+### Prepare
 ```
 python -m pip install pipenv
 ```
@@ -8,6 +8,11 @@ python -m pip install pipenv
 ```
 pipenv shell
 ```
+
+```
+pipenv install
+```
+
 
 ### Usage
 ```
