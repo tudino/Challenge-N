@@ -10,12 +10,10 @@ def read_arguments():
     global ticker, user, password, account
     n = len(sys.argv)
     if n != 8:
-        raise Exception("Debe ingresar ticker [-t] | user [-u] | password [-p] | account [-a]")
+        raise Exception("Debe ejecutar `python challenge.py TICKER -a REMARKETS_ACCOUNT -u REMARKETS_USER -p REMARKETS_PASS`")
 
     ticker = sys.argv[1]
     for i in range(1, n):
-        if sys.argv[i] == "-t" or sys.argv[i] == "--ticker":
-            ticker = sys.argv[i+1]
         if sys.argv[i] == "-u" or sys.argv[i] == "--user":
             user = sys.argv[i+1]
         if sys.argv[i] == "-p" or sys.argv[i] == "--password":
